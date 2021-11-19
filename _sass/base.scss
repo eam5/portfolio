@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    // font-family: 'Open Sans', sans-serif;
+    // font-family: 'Lato', sans-serif;
+    // font-family: 'Nunito Sans',sans-serif;
+    font-family: 'Roboto', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Lora', serif;
+    // height: 100vh;
+    // background-color:rgba(240, 237, 229, 0.7);
+    // background-color: #f4f1eb;
+}
+nav {
+    font-family: 'Roboto', sans-serif;
+    z-index: 9999;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+#main {
+    // margin-top: 86px;
+    margin-top: 26px;
+    height: 100vh;
+}
+
+a {
+    border-bottom: 1px solid #0ff;
+    color: #333;
+    text-decoration: none;
+    -webkit-transition: border .3s, color .3s;
+    -moz-transition: border .3s, color .3s;
+    transition: border .3s, color .3s;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    margin: 0 8px 0 0;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.site-title a {
+    border: 2px solid #333;
+    color: #111;
+    display: inline-block;
+    padding: 18px 30px 10px 38px;
+    position: relative;
+    -webkit-transition: padding .3s;
+    -moz-transition: padding .3s;
+    transition: padding .3s;
+}
+
+.site-title a:before {
+    background-color: #0ff;
+    border-bottom: 2px solid #0ff;
+    border-right: 2px solid #0ff;
+    content: "";
+    height: 100%;
+    left: 8px;
+    position: absolute;
+    top: 8px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    transition: .3s;
+    width: 100%;
+    z-index: -1;
+}
+
+.site-title a:hover {
+    padding: 14px 34px;
+}
+
+.site-title a:hover:before {
+    left: 0;
+    top: 0;
+}
+
+.navigation a {
+    border-color: transparent;
+}
+
+.navigation a:hover {
+    border-color: #0ff;
+}
