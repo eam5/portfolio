@@ -1,9 +1,11 @@
 #_data/navbar.yml
 # - name: Home
 #   url: /
-- name: Custom Omeka Themes
-  url: /omeka-themes
-- name: Data-Viz
+- name: Websites
+  url: /web-design
+- name: Graphics
+  url: /graphic-design
+- name: Data Viz
   url: /data-viz
 - name: PHD
   url: /atlantic-synagogues

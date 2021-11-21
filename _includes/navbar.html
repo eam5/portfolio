@@ -1,13 +1,28 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-light" style="background-color: #fff;">
   <h1 class="site-title">
     <a href="/" rel="home">EAM</a>
   </h1>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="navigation collapse navbar-collapse" id="navbarCollapse">
+  <div class="navigation collapse navbar-collapse justify-content-end" id="navbarCollapse">
       <ul class="navbar-nav">
-         {% assign links = site.data.navbar %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/#websites" | prepend: site.url}}">Websites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/#graphics" | prepend: site.url}}">Graphics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/#data-viz" | prepend: site.url}}">Data Viz</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/#phd" | prepend: site.url}}">PhD</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ "/#about" | prepend: site.url}}">Me</a>
+        </li>
+         <!-- {% assign links = site.data.navbar %}
           {% for link in links %}
           {% if page.url contains link.url %}
                 {% assign class = 'active' %}
@@ -15,7 +30,7 @@
           <li class="nav-item">
             <a class="nav-link" href="{{link.url | prepend: site.url}}">{{ link.name }}</a>
           </li>
-          {% endfor %}
+          {% endfor %} -->
 
         </ul>
   </div>
