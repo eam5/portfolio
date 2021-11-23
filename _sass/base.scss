@@ -18,6 +18,28 @@ body {
     min-height: 100vh;
     word-wrap: break-word;
 }
+
+#skipnav {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  #skipnav:focus {
+    top:0;
+    z-index:9999;
+    clip:initial;
+    height:auto;
+    width:auto;
+    padding:.5em;
+    border:1px blue dashed;
+  }
+  
 nav {
     font-family: 'Roboto', sans-serif;
     z-index: 9999;
@@ -283,7 +305,7 @@ a:hover {
 
 .footer-bottom {
     border-top: 2px solid #333;
-    padding-top: 2.5em;
+    padding-top: 2em;
 }
 
 .social-links {
@@ -291,9 +313,10 @@ a:hover {
     text-align: right;
 }
 
-.social-links a {
+.social-links a{
     border: 0;
-    color: inherit;
+    // color: inherit;
+    color: #111;
     display: inline-block;
     font-size: 18px;
     margin-bottom: 0.25em;
@@ -302,19 +325,15 @@ a:hover {
 }
 
 .social-links a:hover {
-    color: #999;
+    color: #6c757d; //#999;
 }
 
 .site-info {
     float: left;
-    // font-size: 12px;
-    // font: 11px/1.5 "Cousine","Courier New",Courier,monospace;
-    // letter-spacing: 0.1em;
     margin-top: 0.5em;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    // font-weight: bold;
     letter-spacing: 0.1em;
     line-height: 1.5;
 }
@@ -322,7 +341,7 @@ a:hover {
 .site-info a {
     border-color: transparent;
     // color: #111;
-    color: #999;
+    color: #6c757d;//#999;
 }
 
 .site-info a:hover {
@@ -337,7 +356,7 @@ a:hover {
 .top-link {
     border: 0;
     bottom: 15px;
-    color: #999;
+    color: #6c757d; //#999;
     font-size: 12px;
     font-weight: bold;
     text-decoration: none;
