@@ -4,7 +4,7 @@ title: Digital Black Girls Omeka Site
 permalink: /dbg/
 ---
 
-<div class="page-title">
+<!-- <div class="page-title">
     <span aria-label="page type">Website //</span>
     <h1 >Digital Black Girls</h1>
 </div>
@@ -17,19 +17,51 @@ permalink: /dbg/
 </div>
 
 <div class="project-image">
-    <img src="/assets/images/dbg-banner.png">
+    <img src="{{ "/assets/images/dbg-banner.png" | prepend: site.url }}">
+</div> -->
+
+<div class=" pt-4 my-5 text-center border-bottom">
+    <div class="page-title m-0">
+        <span aria-label="page type">Website //</span>
+    </div>
+    <h1 class="display-5 fw-bold">Digital Black Girls</h1>
+    <div class="col-lg-8 mx-auto mb-4">
+        <p class="lead mb-0">Type: Custom Omeka Theme</p>
+        <p class="lead mb-0">Clients: Dr. Aria S. Halliday & Dr. Ashleigh Greene Wade</p>
+        <p class="lead mb-0">Website: <a href="https://digitalblackgirls.org/">digitalblackgirls.org</a></p>
+        <p class="lead mb-0">Github: <a href="https://github.com/eam5/digitalblackgirls">eam5/digitalblackgirls</a></p>
+    </div>
+    <div class="overflow-hidden" style="max-height: 40vh;">
+      <div class="container ">
+        <img src="{{ "/assets/images/dbg-banner.png" | prepend: site.url }}" class="shadow rounded featurette-image img-fluid mx-auto mb-4" alt="Example image" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+<div class="row featurette my-5">
+  <div class="col-md-7 my-auto">
+    <h2 class="featurette-heading">Custom Omeka Theme designed for the digital archive: <span class="text-muted">Digital Black Girls.</span></h2>
+    <p class="lead">The site is bold and colorful, with interactive hover elements for a sense of engagement.</p>
+  </div>
+  <div class="col-md-5">
+    <img class="shadow rounded featurette-image img-fluid mx-auto" src="{{ "/assets/images/dbg-home.png" | prepend: site.url }}">
+  </div>
 </div>
 
-<div class="container-fluid clearfix project-content">
-    <p>Custom Omeka Theme designed for the digital archive: Digital Black Girls. The site is bold and colorful, with interactive hover elements for a sense of engagement. On mobile, the homepage is simplified for an easier scrolling experience.</p>
-    <!-- <div class="project-image float-md-end align-right ">
-        <img src="/assets/images/dbg-home.png">
-    </div>
-    <div class="project-image float-md-start align-left ">
-        <img src="/assets/images/dbg-menu.png">
-    </div>
-    <div class="project-image float-md-end align-right ">
-        <img src="/assets/images/dbg-footer.png">
-    </div> -->
+<div class="row featurette my-5">
+  <div class="col-md-7 order-md-2 my-auto">
+        <p class="lead">Features include Sliding side menu built with Mmenu light, small and lightweight version of mmenu.js</p>
+  </div>
+  <div class="col-md-5 order-md-1">
+    <img class="shadow rounded featurette-image img-fluid mx-auto" src="{{ "/assets/images/dbg-menu.png" | prepend: site.url }}">
+  </div>
+</div>
 
+<div class="row featurette my-5">
+  <div class="col-md-7 my-auto">
+    <p class="lead">The site is responsive and built with accessibility in mind. On mobile, the homepage is simplified for an easier scrolling experience.</p>
+  </div>
+  <div class="col-md-5">
+    <img class="shadow rounded featurette-image img-fluid mx-auto" src="{{ "/assets/images/dbg-footer.png" | prepend: site.url }}">
+  </div>
 </div>
